@@ -20,12 +20,16 @@
   </ul>
 </div>
 
-<div *ngIf="selectedHero">
+<div>
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div>
+
+<!-- <div *ngIf="selectedHero">
   <h2>{{selectedHero?.name | uppercase}} - Detalhes:</h2>
   <div><span>Id: </span>{{selectedHero?.id}}</div>
   <div>
     <label for="hero-name">Nome do Herói: </label>
     <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
   </div>
-</div>
+</div> -->
 
