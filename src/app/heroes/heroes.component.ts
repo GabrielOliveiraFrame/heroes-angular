@@ -1,5 +1,6 @@
+import { HEROES } from './../shared/heroes-list';
 import { Component, OnInit } from '@angular/core';
-import { Heroe } from '../models/hero';
+import { Hero } from '../models/hero';
 
 @Component({
   selector: 'app-heroes',
@@ -8,14 +9,22 @@ import { Heroe } from '../models/hero';
 })
 export class HeroesComponent implements OnInit {
 
-  hero: Heroe = {
-    id: 1,
-    name: 'Spider-Man'
-  }
+  // hero: Hero = {
+  //   id: 1,
+  //   name: 'Homem-Aranha'
+  // };
+
+  heroes = HEROES;
+
+  selectedHero?: Hero;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClickHero(clickedHero: Hero){
+    this.selectedHero = clickedHero;
   }
 
 }
