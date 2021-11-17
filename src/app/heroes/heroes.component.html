@@ -10,7 +10,7 @@
   <input id="name" [(ngModel)]="hero.name" placeholder="name">
 </div> -->
 
-<div>
+<!-- <div>
   <h2>Meus Heróis</h2>
   <ul class="heroes">
     <li *ngFor="let hero of heroes" [class.selected] = "hero === selectedHero"
@@ -18,11 +18,22 @@
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
   </ul>
-</div>
+</div> -->
 
 <div>
-  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  <h2>Meus Heróis</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detalhe/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+    </li>
+  </ul>
 </div>
+
+<!-- <div>
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div> -->
 
 <!-- <div *ngIf="selectedHero">
   <h2>{{selectedHero?.name | uppercase}} - Detalhes:</h2>

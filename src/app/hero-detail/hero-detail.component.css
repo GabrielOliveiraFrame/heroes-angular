@@ -1,0 +1,22 @@
+label {
+  color: #435960;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
