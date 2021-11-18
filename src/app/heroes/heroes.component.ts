@@ -40,14 +40,15 @@ export class HeroesComponent implements OnInit {
     .subscribe(data => this.heroes = data);
   }
 
-  addHero(name: string): void{
+  addHero(name: string, image: string): void{
     name = name.trim();
+    image = image.trim();
 
-    if(!name){
+    if(!name && !image){
       return;
     }
 
-    this.heroesService.addHero({ name } as Hero)
+    this.heroesService.addHero({ name, image } as Hero)
       .subscribe(hero => {
         this.heroes?.push(hero);
       });

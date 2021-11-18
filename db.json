@@ -1,43 +1,58 @@
 {
   "heroes": [
     {
-      "id": 2,
-      "name": "Homem Formiga"
+      "name": "Loki",
+      "image": "https://poltronanerd.com.br/wp-content/uploads/2021/07/Loki-Presidente-1.jpg",
+      "id": 1
     },
     {
-      "id": 3,
-      "name": "Wanda Maximoff"
+      "name": "Wanda Maximoff",
+      "image": "https://www.recreio.com.br/images/large/2021/06/02/wandavision-1230176.jpg",
+      "id": 2
     },
     {
-      "id": 4,
-      "name": "Visão"
+      "name": "Visão",
+      "image": "https://www.looper.com/img/gallery/the-untold-truth-of-vision/l-intro-1610721164.jpg",
+      "id": 3
     },
     {
-      "id": 5,
-      "name": "Wolverine"
+      "name": "Hulk",
+      "image": "https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Hulk-Vingadores.jpg",
+      "id": 4
     },
     {
-      "id": 6,
-      "name": "Homem de Ferro"
+      "name": "Gavião Arqueiro",
+      "image": "https://assets.papelpop.com/wp-content/uploads/2020/11/gavi%C3%A3o-arqueiro-jeremy-renner.png",
+      "id": 5
     },
     {
-      "id": 7,
-      "name": "Dr.Estranho"
+      "name": "Capitão América",
+      "image": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/06/Captain-America.jpg",
+      "id": 6
     },
     {
-      "id": 8,
-      "name": "Hulk"
-    },
-    {
-      "id": 9,
-      "name": "Capitão América"
+      "name": "Homem de Ferro",
+      "image": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/02/homem-de-ferro-tony-divulgacao.jpg",
+      "id": 7
     },
     {
       "name": "Homem Aranha",
+      "image": "https://sm.ign.com/ign_br/screenshot/default/homem-aranha-tobey-maguire_pzpt.jpg",
+      "id": 8
+    },
+    {
+      "name": "Dr.Estranho",
+      "image": "https://1.bp.blogspot.com/-458gnt7b_4s/V7T-dJhW2PI/AAAAAAAAOuU/JUIdCWGnuc4bP1S59xYJst74XtpKkDwkACLcB/s1600/01.jpg",
+      "id": 9
+    },
+    {
+      "name": "Wong",
+      "image": "https://rollingstone.uol.com.br/media/_versions/wong-doutor-estranho-marvel-foto-reproducao-marvel_widelg.jpg",
       "id": 10
     },
     {
-      "name": "Loki",
+      "name": "Bucky Barnes",
+      "image": "https://poltronanerd.com.br/wp-content/uploads/2020/06/sebastianstanthewintersoldier-1200x800-1.jpg",
       "id": 11
     }
   ]

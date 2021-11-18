@@ -23,12 +23,21 @@
 <div>
   <h2>Meus Heróis</h2>
   <div class="add">
-    <label for="new-hero">Novo Herói: </label>
-    <input id="new-hero" #heroName placeholder="Nome" autocomplete="off"/>
+    <div class="form-group">
+      <label for="new-hero">Novo Herói: </label>
+      <input id="new-hero" #heroName placeholder="Nome" autocomplete="off"/>
+    </div>
 
-    <button class="add-button" (click)="addHero(heroName.value); heroName.value=''">
-      Adicionar Herói
-    </button>
+    <div class="form-group">
+      <label for="new-image">Endereço da Imagem: </label>
+      <input id="new-image" #heroImage placeholder="Imagem" autocomplete="off"/>
+
+      <button class="add-button" (click)="addHero(heroName.value, heroImage.value);
+      heroName.value=''; heroImage.value=''">
+        Adicionar Herói
+      </button>
+    </div>
+
   </div>
 
   <ul class="heroes">

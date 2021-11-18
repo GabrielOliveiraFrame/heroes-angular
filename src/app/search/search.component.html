@@ -1,6 +1,6 @@
 <div id="search-component">
   <label for="search-box">Procurar Herói:</label>
-  <input #searchBox id="search-box" (input)="searchHeroes(searchBox.value)" />
+  <input #searchBox id="search-box" (input)="searchHeroes(searchBox.value)" autocomplete="off"/>
 
   <ul class="search-result">
     <li *ngFor="let hero of heroes$ | async" >

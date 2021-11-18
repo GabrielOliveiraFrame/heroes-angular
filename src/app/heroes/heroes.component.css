@@ -50,11 +50,15 @@
   margin: 20px 0;
 }
 
-.add input {
+.form-group{
+  margin-bottom: 25px;
+}
+
+.add .form-group input {
   padding: 3px;
 }
 
-.add button{
+.add .form-group button{
   margin-left: 20px;
   font-size: 16px;
   cursor: pointer;
@@ -79,4 +83,5 @@
  button.delete:hover {
    background-color: #525252;
    color: white;
+   cursor: pointer;
  }
