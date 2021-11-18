@@ -22,7 +22,7 @@ export class HeroesService {
   getHeroes(): Observable<Hero[]>{
     return this.http.get<Hero[]>(this.url).pipe(
       tap(() => this.log(`Obtendo Lista de Heróis!`)),
-      catchError(this.handleError<Hero[]>('getHeroes'))
+      catchError(this.handleError<Hero[]>('getHeroes', []))
     );
   }
 
@@ -77,6 +77,8 @@ export class HeroesService {
       console.error(error); // log to console instead
 
       this.log(`${operation} failed: ${error.message}`);
+
+      console.log(result);
 
       return of(result as T);
     }
