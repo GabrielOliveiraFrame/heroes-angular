@@ -1,9 +1,10 @@
-<div *ngIf="hero">
+<div *ngIf="hero" class="content">
   <h2>{{hero?.name | uppercase}} - Detalhes:</h2>
   <div><span>Id: </span>{{hero?.id}}</div>
   <div>
     <label for="hero-name">Edite o Nome do Herói: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" autocomplete="off">
   </div>
   <button (click)="goBack()">Voltar</button>
+  <button (click)="updateHero()">Salvar</button>
 </div>

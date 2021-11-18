@@ -1,10 +1,24 @@
+.content{
+  max-width: 450px;
+  margin: 20px 0;
+  background-color:rgb(226, 212, 212);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 label {
   color: #435960;
   font-weight: bold;
 }
 
+input{
+  font-size: 15px;
+  padding: 2px;
+}
+
 button {
   margin-top: 20px;
+  margin-right: 10px;
   background-color: #eee;
   padding: 10px;
   border-radius: 4px;
@@ -13,8 +27,9 @@ button {
 }
 
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #ffffff;
 }
+
 button:disabled {
   background-color: #eee;
   color: #ccc;

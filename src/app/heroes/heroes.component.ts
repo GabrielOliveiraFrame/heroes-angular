@@ -35,9 +35,30 @@ export class HeroesComponent implements OnInit {
   //   this.messagesService.add(`HeroesComponent: ${this.selectedHero.name} foi selecionado!`)
   // }
 
-  getHeroes() {
+  getHeroes(): void {
     this.heroesService.getHeroes()
     .subscribe(data => this.heroes = data);
+  }
+
+  addHero(name: string): void{
+    name = name.trim();
+
+    if(!name){
+      return;
+    }
+
+    this.heroesService.addHero({ name } as Hero)
+      .subscribe(hero => {
+        this.heroes?.push(hero);
+      });
+  }
+
+  deleteHero(hero: Hero): void{
+    if(!hero){
+      return;
+    }
+
+    this.heroesService.deleteHero(hero.id).subscribe(() => this.getHeroes());
   }
 
 }

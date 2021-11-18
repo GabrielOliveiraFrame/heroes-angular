@@ -1,0 +1,44 @@
+{
+  "heroes": [
+    {
+      "id": 2,
+      "name": "Homem Formiga"
+    },
+    {
+      "id": 3,
+      "name": "Wanda Maximoff"
+    },
+    {
+      "id": 4,
+      "name": "Visão"
+    },
+    {
+      "id": 5,
+      "name": "Wolverine"
+    },
+    {
+      "id": 6,
+      "name": "Homem de Ferro"
+    },
+    {
+      "id": 7,
+      "name": "Dr.Estranho"
+    },
+    {
+      "id": 8,
+      "name": "Hulk"
+    },
+    {
+      "id": 9,
+      "name": "Capitão América"
+    },
+    {
+      "name": "Homem Aranha",
+      "id": 10
+    },
+    {
+      "name": "Loki",
+      "id": 11
+    }
+  ]
+}

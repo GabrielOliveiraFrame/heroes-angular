@@ -11,7 +11,7 @@
   background-color: #EEE;
   margin: .5em;
   padding: .3em 0;
-  height: 1.6em;
+  height: 2em;
   border-radius: 4px;
 }
 .heroes li:hover {
@@ -41,11 +41,42 @@
   position: relative;
   left: -1px;
   top: -4px;
-  height: 1.8em;
+  height: 2.3em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
 
-input {
-  padding: .5rem;
+.add{
+  margin: 20px 0;
 }
+
+.add input {
+  padding: 3px;
+}
+
+.add button{
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ .add-button:hover {
+   color: white;
+   background-color: #42545C;
+ }
+
+ button.delete {
+   position: absolute;
+   height: 32px;
+   left: 210px;
+   top: 0px;
+   background-color: white;
+   color:  #525252;
+   font-size: 1.1rem;
+   padding: 2px 10px;
+ }
+
+ button.delete:hover {
+   background-color: #525252;
+   color: white;
+ }

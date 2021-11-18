@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { HeroesService } from './../heroes.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -14,7 +15,7 @@ export class HeroDetailComponent implements OnInit {
   // @Input()
   // hero?: Hero;
 
-  hero: Hero | undefined;
+  hero?: Hero;
 
   constructor(private activatedRoute: ActivatedRoute,
     private heroesService: HeroesService,
@@ -29,6 +30,13 @@ export class HeroDetailComponent implements OnInit {
 
     this.heroesService.getHeroById(id)
       .subscribe((data: Hero) => this.hero = data);
+  }
+
+  updateHero(): void {
+    if (this.hero) {
+      this.heroesService.updateHero(this.hero)
+        .subscribe(() => this.goBack())
+    }
   }
 
   goBack(){
